@@ -5,7 +5,6 @@ A tool to generate project roadmaps using the Claude AI API. This application he
 ## Features
 
 - Generate detailed project roadmaps using AI
-- Interactive UI for roadmap creation and editing
 - Export roadmaps in markdown format
 - Example roadmaps included
 
@@ -30,7 +29,11 @@ pip install -r requirements.txt
 
 4. Run the application:
 ```bash
-python main.py
+# Generate a roadmap and display it
+python main.py generate "Your app idea description"
+
+# Generate a roadmap and save it to a file
+python main.py save "Your app idea description" --output-file my_roadmap.md
 ```
 
 ## Required API Key

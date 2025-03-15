@@ -1,6 +1,5 @@
 # main.py
 import typer
-from ui import RoadmapGeneratorApp
 from roadmap_generator import generate_roadmap
 import asyncio
 from rich.console import Console
@@ -9,11 +8,6 @@ from config import APP_NAME, APP_VERSION
 
 app = typer.Typer()
 console = Console()
-
-@app.command()
-def ui():
-    """Launch the interactive UI version of the roadmap generator."""
-    RoadmapGeneratorApp().run()
 
 @app.command()
 def generate(idea: str = typer.Argument(..., help="Your app idea description")):
