@@ -1,0 +1,42 @@
+# Roadmap Generator
+
+A tool to generate project roadmaps using the Claude AI API. This application helps developers create detailed roadmaps for their projects with AI assistance.
+
+## Features
+
+- Generate detailed project roadmaps using AI
+- Interactive UI for roadmap creation and editing
+- Export roadmaps in markdown format
+- Example roadmaps included
+
+## Setup
+
+1. Clone the repository:
+```bash
+git clone https://github.com/pkells12/roadmap-generator.git
+cd roadmap-generator
+```
+
+2. Create a virtual environment and install dependencies:
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+3. Set up your environment variables:
+   - Copy `env.example` to `.env`
+   - Add your Anthropic API key to the `.env` file
+
+4. Run the application:
+```bash
+python main.py
+```
+
+## Required API Key
+
+This project requires an Anthropic API key to work. You can get one by signing up at [https://www.anthropic.com/](https://www.anthropic.com/).
+
+## License
+
+MIT 
