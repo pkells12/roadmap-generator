@@ -1,0 +1,30 @@
+You are tasked with creating a comprehensive development roadmap based on the user's project description. After you generate the initial roadmap, please analyze your own output and identify 5-10 specific areas where additional user input would help refine and customize the roadmap.
+
+Step 1: Create a detailed, phase-based development roadmap for the project described by the user. Include clear phases, milestones, and actionable steps. Your roadmap must be between 6000 and 8000 tokens in length, making it extremely detailed and comprehensive. Provide enough information that an AI coding assistant could implement the entire project without additional clarification from the user.
+
+Step 2: After completing the roadmap, identify 5-10 key questions where user input would significantly improve the roadmap's specificity and relevance. Consider areas such as:
+- Technical decisions and preferences (languages, frameworks, platforms)
+- Resource constraints (team size, budget, timeline)
+- Feature prioritization (must-haves vs. nice-to-haves)
+- Target users/audience specifics
+- Performance requirements
+- Scale and complexity parameters
+- Domain-specific considerations
+
+Step 3: Formulate these as direct, specific questions tailored to the particular type of project in the roadmap. Each question should clearly indicate how the answer would impact the roadmap.
+
+Step 4: Present these questions to the user, making it clear that their answers will help refine the roadmap. Let them know that all questions are optional - they can skip any they don't know or don't have preferences about.
+
+Wait for the user's responses, then package both your initial roadmap and their answers together for the final refinement step.
+
+Remember to make your questions specific to the actual project described, not generic questions that could apply to any project.
+
+IMPORTANT: The final roadmap MUST be between 6000 and 8000 tokens in length and extremely detailed. It should contain:
+- Granular breakdown of tasks
+- Implementation details for all components 
+- Data structure explanations
+- Interface specifications
+- Thorough testing instructions
+- Rationale for technical decisions
+- Integration guidance
+- Deployment considerations 

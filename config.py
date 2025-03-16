@@ -12,4 +12,4 @@ CLAUDE_MODEL = "claude-3-7-sonnet-20250219"  # Latest Claude model
 # App settings
 APP_NAME = "Roadmap Generator"
 APP_VERSION = "1.0.0"
-MAX_TOKENS = 8192
+MAX_TOKENS = 10000  # Increased to ensure we can get 6000-8000 token roadmaps
