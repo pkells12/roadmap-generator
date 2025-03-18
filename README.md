@@ -1,45 +1,93 @@
-# Roadmap Generator
+# 🚀 Roadmap Generator
+A powerful CLI tool that helps developers and project managers create comprehensive project roadmaps using Claude AI, with support for custom prompts and multiple output formats.
 
-A tool to generate project roadmaps using the Claude AI API. This application helps developers create detailed roadmaps for their projects with AI assistance.
+## ✨ Features
+🤖 AI-Powered Generation - Create detailed roadmaps using Claude 3 Sonnet
+📝 Custom Prompts - Use specialized prompts for different project types
+📊 Structured Output - Get well-organized, hierarchical project plans
+🎯 Project Phases - Automatically break down projects into logical phases
+💾 Multiple Formats - Export roadmaps in markdown or text formats
+🔄 Interactive Mode - Refine roadmaps through conversation with AI
 
-## Features
+## 📋 Requirements
+- Python 3.10+
+- Anthropic API key
 
-- Generate detailed project roadmaps using AI
-- Export roadmaps in markdown format
-- Example roadmaps included
-
-## Setup
-
-1. Clone the repository:
+## 🔧 Installation
+### Option 1: Install from PyPI (Coming Soon)
 ```bash
-git clone https://github.com/pkells12/roadmap-generator.git
-cd roadmap-generator
+pip install roadmap-generator
 ```
 
-2. Create a virtual environment and install dependencies:
+### Option 2: Install from Source
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+# Clone the repository
+git clone https://github.com/pkells12/roadmap-generator.git
+cd roadmap-generator
+
+# Create and activate a virtual environment
+python -m venv .venv
+source .venv/bin/activate  # On Windows, use: .venv\Scripts\activate
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-3. Set up your environment variables:
-   - Copy `env.example` to `.env`
-   - Add your Anthropic API key to the `.env` file
-
-4. Run the application:
+## ⚙️ Configuration
+Copy the example environment file and edit it with your API key:
 ```bash
-# Generate a roadmap and display it
-python main.py generate "Your app idea description"
-
-# Generate a roadmap and save it to a file
-python main.py save "Your app idea description" --output-file my_roadmap.md
+cp .env.example .env
 ```
 
-## Required API Key
+Add your API key to the .env file:
+```
+ANTHROPIC_API_KEY=your_api_key_here
+```
 
-This project requires an Anthropic API key to work. You can get one by signing up at [https://www.anthropic.com/](https://www.anthropic.com/).
+## 🚀 Usage Examples
+### Basic Generation
+Generate a roadmap directly from the command line:
+```bash
+roadmap-generator generate "A mobile app for tracking daily habits with social features"
+```
 
-## License
+### Using a File for Input
+```bash
+roadmap-generator generate --idea-file project_description.txt
+```
 
-MIT 
+### Save Results to a File
+```bash
+roadmap-generator generate "My project idea" --output-file project_roadmap.md
+```
+
+### Choose Project Type
+```bash
+roadmap-generator generate "My project idea" --project-type mobile-app
+```
+
+### Interactive Mode
+Work through the roadmap creation process step by step:
+```bash
+roadmap-generator interactive
+```
+
+## 📚 Command Options
+```
+generate [IDEA]          Generate a project roadmap
+  --idea-file FILE       Load project description from a file
+  --output-file FILE     Save roadmap to a file
+  --project-type TYPE    Specify project type [web-app|mobile-app|api|cli]
+  --format FORMAT        Output format [markdown|text]
+
+interactive             Start an interactive roadmap session
+```
+
+## 🧪 Development
+Run tests:
+```bash
+pytest
+```
+
+## 📄 License
+MIT
